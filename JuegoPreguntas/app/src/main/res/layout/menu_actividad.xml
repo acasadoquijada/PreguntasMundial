@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/cesped"
+    android:id="@+id/menu_actividad"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.alejandro.juegopreguntas.MenuActividad">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:id="@+id/imagenPregunta"
+        android:layout_weight="0.6"
+        tools:visibility="invisible"
+        tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_below="@+id/imagenPregunta"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="78dp">
+
+        <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bRespuesta1"
+            android:layout_weight="0.06"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bRespuesta2"
+            android:layout_weight="0.06"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bRespuesta3"
+            android:layout_weight="0.06"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bRespuesta4"
+            android:layout_weight="0.06"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textoPregunta"
+        android:layout_weight="0.06"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textoPreguntaImagen"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/imagenPregunta"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:visibility="invisible"
+        tools:textColor="@android:color/background_light"
+        tools:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
